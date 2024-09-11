@@ -1,0 +1,112 @@
+/* General body styles */
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+    color: #333;
+}
+
+/* Header section */
+header {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+header .logo_wrapper {
+    display: inline-block;
+}
+
+header .header_bottom_right_widget_holder {
+    float: right;
+}
+
+.qbutton {
+    background-color: #ce462b;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.qbutton:hover {
+    background-color: #000;
+}
+
+/* Main content styles */
+.content {
+    margin-top: 100px;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #ce462b;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Portfolio Section */
+.projects_holder .image_holder {
+    position: relative;
+}
+
+.projects_holder .image img {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.projects_holder .image:hover img {
+    transform: scale(1.1);
+}
+
+.text_holder {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #ce462b;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header_inner_left, .header_inner_right {
+        float: none;
+        text-align: center;
+    }
+
+    .qbutton {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .content {
+        padding: 10px;
+    }
+}
